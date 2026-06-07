@@ -1179,190 +1179,31 @@
     }
 
 
-/* ─── TOY IELERI: KAZAKH ORNAMENT ─── */
+/* ─── TOY IELERI ─── */
 #hosts {
-  background:
-    radial-gradient(ellipse 70% 70% at 50% 50%, rgba(255,254,248,0.92), rgba(251,249,241,0.72) 58%, rgba(227,232,209,0.42) 100%),
-    var(--cream-soft);
-  padding: 96px 24px;
-  position: relative;
-  overflow: hidden;
+  background: var(--cream-soft);
+  padding: 90px 24px;
 }
-
-#hosts::before,
-#hosts::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: 310px;
-  height: 310px;
-  border: 1px solid rgba(102,116,77,0.18);
-  border-radius: 38px;
-  transform: translateY(-50%) rotate(45deg);
-  opacity: 0.75;
-  pointer-events: none;
-}
-
-#hosts::before {
-  left: -145px;
-}
-
-#hosts::after {
-  right: -145px;
-}
-
-.hosts-block {
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 48px 34px;
-  border: 1px solid rgba(102,116,77,0.18);
-  border-radius: 28px;
-  background: rgba(255,254,248,0.58);
-  box-shadow: 0 22px 60px rgba(31,44,24,0.08);
-}
-
-.hosts-block::before,
-.hosts-block::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  width: 220px;
-  height: 24px;
-  transform: translateX(-50%);
-  background:
-    linear-gradient(135deg, transparent 0 34%, rgba(102,116,77,0.30) 35% 43%, transparent 44% 100%),
-    linear-gradient(45deg, transparent 0 34%, rgba(102,116,77,0.30) 35% 43%, transparent 44% 100%);
-  background-size: 34px 24px;
-  opacity: 0.72;
-}
-
-.hosts-block::before {
-  top: 18px;
-}
-
-.hosts-block::after {
-  bottom: 18px;
-  transform: translateX(-50%) rotate(180deg);
-}
-
+.hosts-block { text-align:center; }
 .hosts-label {
-  display: block;
-  font-family: 'Cinzel', serif;
-  font-size: 0.72rem;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--olive);
-  margin-bottom: 18px;
-}
-
-.hosts-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.8rem, 6vw, 4.5rem);
-  font-weight: 300;
-  color: var(--text);
-  margin-bottom: 16px;
-}
-
-#hosts .section-desc {
-  margin-bottom: 22px;
-}
-
-@media (max-width: 640px) {
-  #hosts {
-    padding: 78px 18px;
-  }
-
-  #hosts::before,
-  #hosts::after {
-    width: 210px;
-    height: 210px;
-    opacity: 0.45;
-  }
-
-  #hosts::before {
-    left: -135px;
-  }
-
-  #hosts::after {
-    right: -135px;
-  }
-
-  .hosts-block {
-    padding: 46px 22px;
-    border-radius: 24px;
-  }
-
-  .hosts-title {
-    font-size: 3rem;
-  }
-
-  .hosts-label {
-    font-size: 0.82rem;
-  }
-
-  .hosts-block::before,
-  .hosts-block::after {
-    width: 165px;
-    background-size: 28px 22px;
-  }
-}
-
-
-/* ─── KAZAKH ORNAMENTS ─── */
-
-/* Галерея */
-#gallery::before{
-  content:'';
   display:block;
-  height:42px;
-  margin:0 auto 30px;
-  opacity:.22;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='40' viewBox='0 0 240 40'%3E%3Cpath d='M0 20c20 0 20-16 40-16s20 16 40 16 20-16 40-16 20 16 40 16 20-16 40-16 20 16 40 16' fill='none' stroke='%2366744d' stroke-width='2.5'/%3E%3C/svg%3E");
-  background-repeat:repeat-x;
-  background-position:center;
+  font-family:'Cinzel', serif;
+  font-size:0.72rem;
+  letter-spacing:0.35em;
+  text-transform:uppercase;
+  color:var(--olive);
+  margin-bottom:18px;
 }
-
-/* Той иелері */
-#hosts{
-  position:relative;
+.hosts-title {
+  font-family:'Cormorant Garamond', serif;
+  font-size:clamp(2.8rem, 6vw, 4.5rem);
+  font-weight:300;
+  color:var(--text);
+  margin-bottom:20px;
 }
-
-#hosts::before,
-#hosts::after{
-  content:'';
-  position:absolute;
-  top:50%;
-  width:260px;
-  height:260px;
-  transform:translateY(-50%);
-  opacity:.16;
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath d='M100 20c20 0 20 20 40 20s20-20 40-20c0 20-20 20-20 40s20 20 20 40c-20 0-20-20-40-20s-20 20-40 20c0-20 20-20 20-40s-20-20-20-40z' fill='none' stroke='%2366744d' stroke-width='4'/%3E%3C/svg%3E");
-}
-
-#hosts::before{left:2%;}
-#hosts::after{right:2%; transform:translateY(-50%) scaleX(-1);}
-
-/* RSVP */
-#rsvp .section-title::before,
-#rsvp .section-title::after{
-  content:'❈';
-  color:rgba(200,210,165,.65);
-  font-size:.7em;
-  margin:0 16px;
-}
-
-@media(max-width:640px){
-  #hosts::before,
-  #hosts::after{
-    width:140px;
-    height:140px;
-    opacity:.10;
-  }
+@media (max-width:640px){
+  .hosts-title{font-size:3rem;}
+  .hosts-label{font-size:0.82rem;}
 }
 
 </style>
