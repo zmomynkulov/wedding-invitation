@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Жандар & Далила — 28 августа 2026</title>
 
+  <script>
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual";
+    }
+  </script>
+
+
   <style>
     @font-face {
       font-family: 'Vivaldi Script Custom';
@@ -1215,6 +1222,12 @@
   display: flex;
 }
 
+
+/* ─── MOBILE OPEN POSITION FIX ─── */
+html {
+  overflow-anchor: none;
+}
+
 </style>
 </head>
 <body>
@@ -1595,6 +1608,16 @@
       attendanceSelect.addEventListener("change", updatePartnerField);
       updatePartnerField();
     }
+  </script>
+
+  <script>
+    window.addEventListener("pageshow", function () {
+      if (!window.location.hash) {
+        setTimeout(function () {
+          window.scrollTo(0, 0);
+        }, 0);
+      }
+    });
   </script>
 
 </body>
