@@ -1310,6 +1310,61 @@
   }
 }
 
+
+/* ─── KAZAKH ORNAMENTS ─── */
+
+/* Галерея */
+#gallery::before{
+  content:'';
+  display:block;
+  height:42px;
+  margin:0 auto 30px;
+  opacity:.22;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='40' viewBox='0 0 240 40'%3E%3Cpath d='M0 20c20 0 20-16 40-16s20 16 40 16 20-16 40-16 20 16 40 16 20-16 40-16 20 16 40 16' fill='none' stroke='%2366744d' stroke-width='2.5'/%3E%3C/svg%3E");
+  background-repeat:repeat-x;
+  background-position:center;
+}
+
+/* Той иелері */
+#hosts{
+  position:relative;
+}
+
+#hosts::before,
+#hosts::after{
+  content:'';
+  position:absolute;
+  top:50%;
+  width:260px;
+  height:260px;
+  transform:translateY(-50%);
+  opacity:.16;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath d='M100 20c20 0 20 20 40 20s20-20 40-20c0 20-20 20-20 40s20 20 20 40c-20 0-20-20-40-20s-20 20-40 20c0-20 20-20 20-40s-20-20-20-40z' fill='none' stroke='%2366744d' stroke-width='4'/%3E%3C/svg%3E");
+}
+
+#hosts::before{left:2%;}
+#hosts::after{right:2%; transform:translateY(-50%) scaleX(-1);}
+
+/* RSVP */
+#rsvp .section-title::before,
+#rsvp .section-title::after{
+  content:'❈';
+  color:rgba(200,210,165,.65);
+  font-size:.7em;
+  margin:0 16px;
+}
+
+@media(max-width:640px){
+  #hosts::before,
+  #hosts::after{
+    width:140px;
+    height:140px;
+    opacity:.10;
+  }
+}
+
 </style>
 </head>
 <body>
