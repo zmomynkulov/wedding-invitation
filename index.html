@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Жандар & Далила — 28 августа 2026</title>
+  <title>Жандар & Далила — 2026 жылғы 28 тамыз</title>
 
   <script>
     (function () {
@@ -1246,6 +1246,23 @@ html, body {
   overflow-anchor: none;
 }
 
+
+/* ─── COUNTDOWN AFTER TEXT ─── */
+.countdown-after {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.1rem, 5vw, 3.6rem);
+  font-weight: 300;
+  color: var(--white);
+  text-align: center;
+  margin-top: 28px;
+}
+@media (max-width: 640px) {
+  .countdown-after {
+    font-size: 2.8rem;
+    margin-top: 22px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1291,7 +1308,6 @@ html, body {
   <section id="countdown">
     <div class="section-inner">
       <span class="section-label reveal">Тойдың басталуына</span>
-      <h2 class="section-title reveal reveal-delay-1"></h2>
       <span class="green-line reveal reveal-delay-2"></span>
       <div class="countdown-grid reveal reveal-delay-3">
         <div class="countdown-item">
@@ -1311,6 +1327,7 @@ html, body {
           <span class="countdown-label">Секунд</span>
         </div>
       </div>
+      <p class="countdown-after reveal reveal-delay-3">қалды</p>
     </div>
   </section>
 
@@ -1327,11 +1344,11 @@ html, body {
             <h3 class="venue-name">&laquo;Хан сарай&raquo; мейрамханасы</h3>
             <div class="venue-row">
               <span class="venue-icon">⌖</span>
-              <span>Қаратай Тұрысова көшесі, 13,<br>Тараз қаласы</span>
+              <span>Қаратай Тұрысов көшесі, 13,<br>Тараз қаласы</span>
             </div>
             <div class="venue-row">
               <span class="venue-icon">◷</span>
-              <span>Басталуы: 17:00</span>
+              <span>Басталуы: 18:00</span>
             </div>
             <div class="venue-actions">
               <a class="venue-btn" href="https://go.2gis.com/7OY7f" target="_blank" rel="noopener">2GIS арқылы ашу</a>
@@ -1378,7 +1395,7 @@ html, body {
           Енді, міне, сол ерекше күнде кенже ұлымыз өз шаңырағын көтергелі отыр.
         </p>
         <p class="section-desc">
-          Қуанышымызды бірге бөлісіп, тойымыздың қадірлі қонағы болыңыздар!
+          Тойымыздың қадірлі қонағы болыңыздар!
         </p>
         <span class="green-line"></span>
       </div>
@@ -1430,8 +1447,7 @@ html, body {
 
   <footer>
     <div class="footer-monogram">Ж &amp; Д</div>
-    <p class="footer-date">28 АВГУСТА 2026 &nbsp;&bull;&nbsp; ТАРАЗ</p>
-    <p class="footer-copy">Ізгі ниетпен &mdash; Жандар &amp; Далила</p>
+    <p class="footer-date">2026 ЖЫЛҒЫ 28 ТАМЫЗ &nbsp;&bull;&nbsp; ТАРАЗ</p>
   </footer>
 
 
